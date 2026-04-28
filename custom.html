@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Orders | The Sheets & Co Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-[#f8f1e3] font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-leaf text-3xl text-amber-800"></i>
+                <h1 class="text-2xl font-bold text-amber-900">The Sheets & Co Studio</h1>
+            </div>
+            <div class="hidden md:flex gap-8 text-amber-900">
+                <a href="index.html" class="hover:text-amber-600">Home</a>
+                <a href="about.html" class="hover:text-amber-600">About</a>
+                <a href="gallery.html" class="hover:text-amber-600">Gallery</a>
+                <a href="custom.html" class="hover:text-amber-600">Custom Orders</a>
+                <a href="contact.html" class="hover:text-amber-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-2xl mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-amber-900 text-center mb-4">Request a Custom Piece</h2>
+        <p class="text-center text-amber-800 mb-10">Tell us your idea — we’ll bring it to life with handcrafted care.
+        </p>
+
+        <form action="https://formspree.io/f/xeevyebw" method="POST" class="space-y-6">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+            <div>
+                <label class="block text-amber-900 mb-2">Your Name</label>
+                <input type="text" name="name" required
+                    class="w-full px-4 py-3 rounded-xl border border-amber-300 focus:outline-none focus:border-amber-600">
+            </div>
+            <div>
+                <label class="block text-amber-900 mb-2">Email Address</label>
+                <input type="email" name="email" required
+                    class="w-full px-4 py-3 rounded-xl border border-amber-300 focus:outline-none focus:border-amber-600">
+            </div>
+            <div>
+                <label class="block text-amber-900 mb-2">What would you like made?</label>
+                <textarea name="message" rows="6" required
+                    class="w-full px-4 py-3 rounded-xl border border-amber-300 focus:outline-none focus:border-amber-600"></textarea>
+            </div>
+            <button type="submit"
+                class="w-full bg-amber-900 text-white py-4 rounded-2xl text-lg hover:bg-amber-800 transition">Send
+                Custom Request</button>
+        </form>
+    </div>
+
+    <footer class="bg-amber-900 text-white py-8 text-center">
+        <p>&copy; The Sheets & Co Studio • Handcrafted in the USA</p>
+    </footer>
+
+</body>
+
+</html>
